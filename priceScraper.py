@@ -3,7 +3,6 @@ from urllib.request import urlopen
 
 app = gui()
 
-
 foodType = {
     "Dairy": ["white eggs L", "delicious milk", "nature megumi", "Hokkaido pure fresh cream 35",
               "Hokkaido sour cream", "organic soy milk, unsweetened", "almond effect",
@@ -142,7 +141,9 @@ def getPrice(food):
 
 def reset():
     for word in foodType[app.getOptionBox("type")]:
+        app.stopSound()
         app.changeOptionBox("food", foodType[app.getOptionBox("type")], word)
+        app.loopSound(app.getOptionBox("type") + ".wav")
 
 def resetPrice():
     app.setLabel("JP", dictTranslate[app.getOptionBox("food")])
@@ -175,13 +176,14 @@ def cartBtn(btn):
         nTotal = int(price) + int(app.getLabel("total"))
     app.setTextArea("cartTxt", app.getOptionBox("food") + "\n")
     app.setLabel("total", str(nTotal))
+    app.stopSound()
+    app.playSound("Money.wav")
     
 def clearCartBtn(btn):
     app.setLabel("total", str(0))
     app.clearTextArea("cartTxt")
     
 app.addButton("Clear cart", clearCartBtn, 4, 0)
-
 app.addButton("Add to cart", cartBtn, 4, 2)
 
 app.go()
