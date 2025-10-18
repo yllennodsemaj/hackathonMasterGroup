@@ -33,7 +33,8 @@ dictTranslate = {"white eggs L" : "白たまご L",
             "orange": "オレンジ",
             "chicken": "若どりもも肉 2枚",
             "pork": "豚肉こまぎれ 大",
-            "beef": "牛切落し(交雑種)""onion": "玉ねぎ",
+            "beef": "牛切落し(交雑種)",
+            "onion": "玉ねぎ",
             "carrot": "にんじん",
             "cherry tomato": "チェリートマト",
             "green onion": "長ねぎ",
@@ -50,7 +51,7 @@ dictTranslate = {"white eggs L" : "白たまご L",
             "half white radish": "大根(1/2カット)",
             "chinese cabbage": "白菜(はくさい)"}
 
-    dictURL = {"白たまご L" : "https://netsuper.rakuten.co.jp/seiyu/item/4901995100309/",
+dictURL = {"白たまご L" : "https://netsuper.rakuten.co.jp/seiyu/item/4901995100309/",
                 "おいしい牛乳" : "https://netsuper.rakuten.co.jp/seiyu/item/4902705126558/",
                 "ナチュレ 恵 megumi" : "https://netsuper.rakuten.co.jp/seiyu/item/49212877/",
                 "北海道純生クリーム３５" : "https://netsuper.rakuten.co.jp/seiyu/item/49854282/",
@@ -101,11 +102,9 @@ dictTranslate = {"white eggs L" : "白たまご L",
               "大根(1/2カット)": "https://netsuper.rakuten.co.jp/seiyu/item/131040326/",
               "白菜(はくさい)": "https://netsuper.rakuten.co.jp/seiyu/item/131052640/"}
 
-
-
-def webpageToString(category):
+def webpageToString(translation):
     #selects url based on category
-    url = dictWebpages[category]
+    url = dictURL[translation]
 
     #opens url and pulls html to string
     page = urlopen(url)
@@ -113,15 +112,15 @@ def webpageToString(category):
     return html_bytes.decode("utf-8")
     
 def getPrice(food):
-    category = dictVegetables[food]
-    html = webpageToString(category)
-    foodIndex = html.find(food)
-    taxIndex = html.find("税込", foodIndex)
+    translation = dictTranslate[food]
+    html = webpageToString(translation)
+    startIndex = html.find("product-detail-price-without-tax")
+    taxIndex = html.find("税込", startIndex)
     yenIndex = html.find("円", taxIndex)
     price = html[taxIndex + 3 : yenIndex]
-    return int(price)
+    return price
 
-def addToCart:
+def addToCart():
     itemName = getName()
     itemPrice = getPrice(food)
     itemQuantity = getQuant()
@@ -141,9 +140,9 @@ def totalItems():
         nTotal += item[1]
     return nTotal
         
-#test with carrots
+#test 
 
-print("Carrots cost: " + getPrice("にんじん"))
-print("Onions cost: " + getPrice("玉ねぎ"))
-print("Cucumbers cost: " + getPrice("きゅうり"))
-print("Potatoes cost: " + getPrice("じゃがいも"))
+print("Carrots cost: " + getPrice("banana"))
+print("Hotel margarine cost: " + getPrice("Hotel margarine"))
+print("Seafood mix cost: " + getPrice("seafood mix"))
+print("Chicken cost: " + getPrice("chicken"))
