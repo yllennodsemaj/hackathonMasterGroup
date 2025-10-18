@@ -1,4 +1,23 @@
+from appjar import gui
 from urllib.request import urlopen
+
+app = gui()
+
+
+foodType = {
+    "Dairy": ["white eggs L", "delicious milk", "nature megumi", "Hokkaido pure fresh cream 35",
+              "Hokkaido sour cream", "organic soy milk, unsweetened", "almond effect",
+             "Tropicana Whole Fruit 100% Orange", "Hokkaido butter", "Hotel margarine", "Cream cheese"],
+    "Meat": ["chicken", "pork", "beef"],
+    "Fish": ["sashimi trout", "fish fillet mackerel", "white shrimp", "squid fillet cut", "seafood mix",
+             "shelled clams", "salted sockeye salmon", "red fish pickled in sake lees", "boiled whitebait", "tarako", "shiokara",
+            "wakame seaweed from Naruto waters", "fatty mackerel teriyaki", "fragrant genuine wasabi"],
+    "Fruits": [ "banana", "muscat", "kiwi", "gold kiwi", "persimmon", "avocado", "orange"],
+    "Vegetables": ["onion", "carrot", "cherry tomato", "green onion", "cucumber",
+            "potato", "broccoli", "eggplant", "lettuce", "cabbage", "green pepper",
+            "shimeji mushroom", "enoki mushroom", "japanese mustard spinach",
+            "half white radish", "chinese cabbage"]
+}
 
 dictTranslate = {"white eggs L" : "白たまご L",
              "delicious milk" : "おいしい牛乳",
@@ -16,7 +35,7 @@ dictTranslate = {"white eggs L" : "白たまご L",
             "white shrimp" : "ホワイトえび",
             "squid fillet cut" : "いか切身カット",
             "seafood mix" : "シーフードミックス",
-            "shelled clams " : "あさりむき身",
+            "shelled clams" : "あさりむき身",
             "salted sockeye salmon" : "お魚切り身 塩紅鮭",
             "red fish pickled in sake lees" : "漬魚",
             "boiled whitebait" : "釜揚げしらす",
@@ -84,23 +103,23 @@ dictURL = {"白たまご L" : "https://netsuper.rakuten.co.jp/seiyu/item/4901995
                 "オレンジ": "https://netsuper.rakuten.co.jp/seiyu/item/131106282/",
                "若どりもも肉 2枚": "https://netsuper.rakuten.co.jp/seiyu/item/130251393000003/",
                 "豚肉こまぎれ 大": "https://netsuper.rakuten.co.jp/seiyu/item/130250846000003/",
-                "牛切落し(交雑種)": "https://netsuper.rakuten.co.jp/seiyu/item/130217954000004/", 
-               "玉ねぎ": "https://netsuper.rakuten.co.jp/seiyu/item/131042108/",
-              "にんじん": "https://netsuper.rakuten.co.jp/seiyu/item/131029406/",
-              "チェリートマト": "https://netsuper.rakuten.co.jp/seiyu/item/131034448/",
-              "長ねぎ": "https://netsuper.rakuten.co.jp/seiyu/item/131052930/",
-              "きゅうり": "https://netsuper.rakuten.co.jp/seiyu/item/131000368/",
-              "じゃがいも": "https://netsuper.rakuten.co.jp/seiyu/item/131038972/",
-              "ブロッコリー(国産)": "https://netsuper.rakuten.co.jp/seiyu/item/131006964/",
-              "なす": "https://netsuper.rakuten.co.jp/seiyu/item/131011456/",
-              "レタス": "https://netsuper.rakuten.co.jp/seiyu/item/131005448/",
-              "キャベツ": "https://netsuper.rakuten.co.jp/seiyu/item/131013658/",
-              "ピーマン": "https://netsuper.rakuten.co.jp/seiyu/item/131014594/",
-              "ぶなしめじ": "https://netsuper.rakuten.co.jp/seiyu/item/131072464/",
-              "えのき茸": "https://netsuper.rakuten.co.jp/seiyu/item/131070842/",
-              "小松菜": "https://netsuper.rakuten.co.jp/seiyu/item/131046052/",
-              "大根(1/2カット)": "https://netsuper.rakuten.co.jp/seiyu/item/131040326/",
-              "白菜(はくさい)": "https://netsuper.rakuten.co.jp/seiyu/item/131052640/"}
+                "牛切落し(交雑種)": "https://netsuper.rakuten.co.jp/seiyu/item/130217954000004/",
+                "玉ねぎ": "https://netsuper.rakuten.co.jp/seiyu/item/131042108/",
+                "にんじん": "https://netsuper.rakuten.co.jp/seiyu/item/131029406/",
+               "チェリートマト": "https://netsuper.rakuten.co.jp/seiyu/item/131034448/",
+               "長ねぎ": "https://netsuper.rakuten.co.jp/seiyu/item/131052930/",
+               "きゅうり": "https://netsuper.rakuten.co.jp/seiyu/item/131000368/",
+               "じゃがいも": "https://netsuper.rakuten.co.jp/seiyu/item/131038972/",
+               "ブロッコリー(国産)": "https://netsuper.rakuten.co.jp/seiyu/item/131006964/",
+               "なす": "https://netsuper.rakuten.co.jp/seiyu/item/131011456/",
+               "レタス": "https://netsuper.rakuten.co.jp/seiyu/item/131005448/",
+               "キャベツ": "https://netsuper.rakuten.co.jp/seiyu/item/131013658/",
+               "ピーマン": "https://netsuper.rakuten.co.jp/seiyu/item/131014594/",
+               "ぶなしめじ": "https://netsuper.rakuten.co.jp/seiyu/item/131072464/",
+               "えのき茸": "https://netsuper.rakuten.co.jp/seiyu/item/131070842/",
+               "小松菜": "https://netsuper.rakuten.co.jp/seiyu/item/131046052/",
+               "大根(1/2カット)": "https://netsuper.rakuten.co.jp/seiyu/item/131040326/",
+               "白菜(はくさい)": "https://netsuper.rakuten.co.jp/seiyu/item/131052640/"}
 
 def webpageToString(translation):
     #selects url based on category
@@ -119,30 +138,51 @@ def getPrice(food):
     yenIndex = html.find("円", taxIndex)
     price = html[taxIndex + 3 : yenIndex]
     return price
-
-def addToCart():
-    itemName = getName()
-    itemPrice = getPrice(food)
-    itemQuantity = getQuant()
-    newItem = [itemName, itemQuantity, itemPrice]
-    shoppingList.add(newItem)
-    totalPrice()
-
-def totalPrice():
-    nTotal = 0
-    for item in ShoppingList:
-        nTotal += item[1] * item[2]
-    return nTotal
-
-def totalItems():
-    nTotal = 0
-    for item in shoppingList:
-        nTotal += item[1]
-    return nTotal
         
 #test 
 
-print("Carrots cost: " + getPrice("banana"))
-print("Hotel margarine cost: " + getPrice("Hotel margarine"))
-print("Seafood mix cost: " + getPrice("seafood mix"))
-print("Chicken cost: " + getPrice("chicken"))
+#print("Carrots cost: " + getPrice("banana"))
+#print("Hotel margarine cost: " + getPrice("Hotel margarine"))
+#print("Seafood mix cost: " + getPrice("seafood mix"))
+#print("Chicken cost: " + getPrice("chicken"))
+
+
+def reset():
+    for word in foodType[app.getOptionBox("type")]:
+        app.changeOptionBox("food", foodType[app.getOptionBox("type")], word)
+
+def resetPrice():
+    app.setLabel("JP", dictTranslate[app.getOptionBox("food")])
+    price = getPrice(app.getOptionBox("food"))
+    app.setLabel("price", price)
+
+app.setSticky("nesw")
+app.addLabel("title", "Food Type", 0, 0)
+app.addLabel("title2", "Specific food", 0, 1)
+app.addLabel("title3", "Price with tax", 2, 2)
+app.addLabel("title4", "Written Japanese", 0, 2)
+app.setLabelBg("title4", "green")
+app.setLabelBg("title", "red")
+app.setLabelBg("title2", "blue")
+app.addOptionBox("type", foodType, 1, 0)
+app.addOptionBox("food", foodType[app.getOptionBox("type")], 1, 1)
+app.setOptionBoxChangeFunction("type", reset)
+app.setOptionBoxChangeFunction("food", resetPrice)
+app.addLabel("JP", app.getOptionBox("food"), 1, 2)
+app.addLabel("price", None, 3, 2)
+app.addTextArea("cartTxt", 5, 1)
+app.addLabel("total", "0", 5, 2)
+    
+
+def cartBtn(btn):
+    if(not (app.getLabel("total").isdigit())):
+        nTotal = int(app.getLabel("price"))
+    else:
+        price = getPrice(app.getOptionBox("food"))
+        nTotal = int(price) + int(app.getLabel("total"))
+    app.setTextArea("cartTxt", app.getOptionBox("food") + "\n")
+    app.setLabel("total", str(nTotal))
+
+app.addButton("cart", cartBtn, 4, 2)
+
+app.go()
