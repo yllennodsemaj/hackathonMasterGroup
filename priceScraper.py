@@ -1,4 +1,4 @@
-from appjar import gui
+from appJar import gui
 from urllib.request import urlopen
 
 app = gui()
@@ -85,7 +85,6 @@ dictURL = {"白たまご L" : "https://netsuper.rakuten.co.jp/seiyu/item/4901995
                "ホワイトえび" : "https://netsuper.rakuten.co.jp/seiyu/item/134969832214039/",
                "いか切身カット" : "https://netsuper.rakuten.co.jp/seiyu/item/134589791876989/",
                "シーフードミックス" : "https://netsuper.rakuten.co.jp/seiyu/item/134940785147285/",
-               "たらこ": "https://netsuper.rakuten.co.jp/seiyu/item/134957971807045/",
                "あさりむき身" : "https://netsuper.rakuten.co.jp/seiyu/item/134570078000098/",
                "お魚切り身 塩紅鮭" : "https://netsuper.rakuten.co.jp/seiyu/item/134582404040661/",
                "漬魚" : "https://netsuper.rakuten.co.jp/seiyu/item/134978496001367/",
@@ -139,14 +138,6 @@ def getPrice(food):
     yenIndex = html.find("円", taxIndex)
     price = html[taxIndex + 3 : yenIndex]
     return price
-        
-#test 
-
-#print("Carrots cost: " + getPrice("banana"))
-#print("Hotel margarine cost: " + getPrice("Hotel margarine"))
-#print("Seafood mix cost: " + getPrice("seafood mix"))
-#print("Chicken cost: " + getPrice("chicken"))
-
 
 def reset():
     for word in foodType[app.getOptionBox("type")]:
@@ -183,7 +174,13 @@ def cartBtn(btn):
         nTotal = int(price) + int(app.getLabel("total"))
     app.setTextArea("cartTxt", app.getOptionBox("food") + "\n")
     app.setLabel("total", str(nTotal))
+    
+def clearCartBtn(btn):
+    app.setLabel("total", str(0))
+    app.clearTextArea("cartTxt")
+    
+app.addButton("Clear cart", clearCartBtn, 4, 0)
 
-app.addButton("cart", cartBtn, 4, 2)
+app.addButton("Add to cart", cartBtn, 4, 2)
 
 app.go()
