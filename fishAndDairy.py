@@ -1,15 +1,17 @@
 
-dictFish = {"sashimi trout" : "サーモントラウト", "fish fillet mackerel" : "お魚切り身 さば", "white shrimp" : "ホワイトえび",
-            "squid fillet cut" : "いか切身カット", "seafood mix" : "シーフードミックス", "shelled clams " : "あさりむき身",
-            "salted sockeye salmon" : "お魚切り身 塩紅鮭", "red fish pickled in sake lees" : "漬魚", "boiled whitebait" : "釜揚げしらす",
-            "tarako" : "たらこ", "shiokara" : "いか塩辛", "wakame seaweed from Naruto waters" : "鳴門水域産わかめ",
-            "fatty mackerel teriyaki" : "九州産うなぎ蒲焼", "fragrant genuine wasabi" : "香る本わさび"}
-
-dictDairy = {"white eggs L" : "白たまご L", "delicious milk" : "おいしい牛乳", "nature megumi" : "ナチュレ 恵 megumi",
-             "Hokkaido pure fresh cream 35" : "北海道純生クリーム３５", "Hokkaido sour cream" : "北海道サワークリーム",
-             "organic soy milk, unsweetened" : "有機豆乳 無調整", "almond effect" : "アーモンド効果",
-             "Tropicana Whole Fruit 100% Orange" : "トロピカーナ まるごと果実感 100％ オレンジ", "Hokkaido butter" : "北海道バター",
-             "Hotel margarine" : "ホテルマーガリン", "Cream cheese" : "クリームチーズ"}
+dictFish = {"sashimi trout" : "サーモントラウト",
+            "fish fillet mackerel" : "お魚切り身 さば",
+            "white shrimp" : "ホワイトえび",
+            "squid fillet cut" : "いか切身カット",
+            "seafood mix" : "シーフードミックス",
+            "shelled clams " : "あさりむき身",
+            "salted sockeye salmon" : "お魚切り身 塩紅鮭",
+            "red fish pickled in sake lees" : "漬魚",
+            "boiled whitebait" : "釜揚げしらす",
+            "tarako" : "たらこ", "shiokara" : "いか塩辛",
+            "wakame seaweed from Naruto waters" : "鳴門水域産わかめ",
+            "fatty mackerel teriyaki" : "九州産うなぎ蒲焼",
+            "fragrant genuine wasabi" : "香る本わさび"}
 
 dictFishUrl = {"sashimi trout" : "https://netsuper.rakuten.co.jp/seiyu/item/13269915000000/?l-id=category_ranking_item_03",
                "fish fillet mackerel" : "https://netsuper.rakuten.co.jp/seiyu/item/134582404040562/?l-id=category_ranking_item_02",
@@ -26,6 +28,17 @@ dictFishUrl = {"sashimi trout" : "https://netsuper.rakuten.co.jp/seiyu/item/1326
                "fatty mackerel teriyaki" : "https://netsuper.rakuten.co.jp/seiyu/item/134589849071502/",
                "fragrant genuine wasabi" : "https://netsuper.rakuten.co.jp/seiyu/item/134967825190711/"}
 
+dictDairy = {"white eggs L" : "白たまご L",
+             "delicious milk" : "おいしい牛乳",
+             "nature megumi" : "ナチュレ 恵 megumi",
+             "Hokkaido pure fresh cream 35" : "北海道純生クリーム３５",
+             "Hokkaido sour cream" : "北海道サワークリーム",
+             "organic soy milk, unsweetened" : "有機豆乳 無調整",
+             "almond effect" : "アーモンド効果",
+             "Tropicana Whole Fruit 100% Orange" : "トロピカーナ まるごと果実感 100％ オレンジ",
+             "Hokkaido butter" : "北海道バター",
+             "Hotel margarine" : "ホテルマーガリン", "Cream cheese" : "クリームチーズ"}
+
 dictDairyUrl = {"white eggs L" : "https://netsuper.rakuten.co.jp/seiyu/item/4901995100309/",
                 "delicious milk" : "https://netsuper.rakuten.co.jp/seiyu/item/4902705126558/",
                 "nature megumi" : "https://netsuper.rakuten.co.jp/seiyu/item/49212877/",
@@ -37,3 +50,4 @@ dictDairyUrl = {"white eggs L" : "https://netsuper.rakuten.co.jp/seiyu/item/4901
                 "Hokkaido butter" : "https://netsuper.rakuten.co.jp/seiyu/item/4903050155989/",
                 "Hotel margarine" : "https://netsuper.rakuten.co.jp/seiyu/item/4970208030238/",
                 "Cream cheese" : "https://netsuper.rakuten.co.jp/seiyu/item/4903050506378/"}
+
