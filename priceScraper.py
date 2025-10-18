@@ -85,6 +85,7 @@ dictURL = {"白たまご L" : "https://netsuper.rakuten.co.jp/seiyu/item/4901995
                "ホワイトえび" : "https://netsuper.rakuten.co.jp/seiyu/item/134969832214039/",
                "いか切身カット" : "https://netsuper.rakuten.co.jp/seiyu/item/134589791876989/",
                "シーフードミックス" : "https://netsuper.rakuten.co.jp/seiyu/item/134940785147285/",
+               "たらこ": "https://netsuper.rakuten.co.jp/seiyu/item/134957971807045/",
                "あさりむき身" : "https://netsuper.rakuten.co.jp/seiyu/item/134570078000098/",
                "お魚切り身 塩紅鮭" : "https://netsuper.rakuten.co.jp/seiyu/item/134582404040661/",
                "漬魚" : "https://netsuper.rakuten.co.jp/seiyu/item/134978496001367/",
