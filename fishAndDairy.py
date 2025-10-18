@@ -39,16 +39,17 @@ dictDairy = {"white eggs L" : "白たまご L",
              "Hokkaido butter" : "北海道バター",
              "Hotel margarine" : "ホテルマーガリン", "Cream cheese" : "クリームチーズ"}
 
-dictDairyUrl = {"white eggs L" : "https://netsuper.rakuten.co.jp/seiyu/item/4901995100309/",
-                "delicious milk" : "https://netsuper.rakuten.co.jp/seiyu/item/4902705126558/",
-                "nature megumi" : "https://netsuper.rakuten.co.jp/seiyu/item/49212877/",
-                "Hokkaido pure fresh cream 35" : "https://netsuper.rakuten.co.jp/seiyu/item/49854282/",
-                "Hokkaido sour cream" : "https://netsuper.rakuten.co.jp/seiyu/item/49853971/",
-                "organic soy milk, unsweetened" : "https://netsuper.rakuten.co.jp/seiyu/item/4902188122290/",
-                "almond effect" : "https://netsuper.rakuten.co.jp/seiyu/item/4971666410174/",
-                "Tropicana Whole Fruit 100% Orange" : "https://netsuper.rakuten.co.jp/seiyu/item/4909411091279/",
-                "Hokkaido butter" : "https://netsuper.rakuten.co.jp/seiyu/item/4903050155989/",
-                "Hotel margarine" : "https://netsuper.rakuten.co.jp/seiyu/item/4970208030238/",
-                "Cream cheese" : "https://netsuper.rakuten.co.jp/seiyu/item/4903050506378/"}
+dictDairyUrl = {"白たまご L" : "https://netsuper.rakuten.co.jp/seiyu/item/4901995100309/",
+                "おいしい牛乳" : "https://netsuper.rakuten.co.jp/seiyu/item/4902705126558/",
+                "ナチュレ 恵 megumi" : "https://netsuper.rakuten.co.jp/seiyu/item/49212877/",
+                "北海道純生クリーム３５" : "https://netsuper.rakuten.co.jp/seiyu/item/49854282/",
+                "北海道サワークリーム" : "https://netsuper.rakuten.co.jp/seiyu/item/49853971/",
+                "有機豆乳 無調整" : "https://netsuper.rakuten.co.jp/seiyu/item/4902188122290/",
+                "アーモンド効果" : "https://netsuper.rakuten.co.jp/seiyu/item/4971666410174/",
+                "トロピカーナ まるごと果実感 100％ オレンジ" : "https://netsuper.rakuten.co.jp/seiyu/item/4909411091279/",
+                "北海道バター" : "https://netsuper.rakuten.co.jp/seiyu/item/4903050155989/",
+                "ホテルマーガリン" : "https://netsuper.rakuten.co.jp/seiyu/item/4970208030238/",
+                "クリームチーズ" : "https://netsuper.rakuten.co.jp/seiyu/item/4903050506378/"}
+
 
 
