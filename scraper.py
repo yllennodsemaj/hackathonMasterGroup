@@ -7,33 +7,51 @@ dictWebpages = {"vegetables" : "https://netsuper.rakuten.co.jp/seiyu/search/1100
                  "dairy" : "https://netsuper.rakuten.co.jp/seiyu/search/110007/?l-id=_leftnavi_110007&sort=1",
                  "rice" : "https://netsuper.rakuten.co.jp/seiyu/search/110010/?l-id=_leftnavi_110010&sort=1"}
 
-dictVegetables = {"にんじん" : "vegetables"}
+dictVegetables = {"にんじん" : "vegetables", "玉ねぎ" : "vegetables", "きゅうり" : "vegetables", "じゃがいも" : "vegetables"}
 
-def getCategory(food):
-    return dictVegetables[food]
 
-def whichWebpage(category):
-    #selects webpage based on user input
+
+def webpageToString(category):
+    #selects url based on category
     url = dictWebpages[category]
 
-    #opens webpage and pulls html to string
+    #opens url and pulls html to string
     page = urlopen(url)
     html_bytes = page.read()
     return html_bytes.decode("utf-8")
     
 def getPrice(food):
-    category = getCategory(food)
-    html = whichWebpage(category)
+    category = dictVegetables[food]
+    html = webpageToString(category)
     foodIndex = html.find(food)
     taxIndex = html.find("税込", foodIndex)
     yenIndex = html.find("円", taxIndex)
     price = html[taxIndex + 3 : yenIndex]
-    return price
+    return int(price)
 
+def addToCart:
+    itemName = getName()
+    itemPrice = getPrice(food)
+    itemQuantity = getQuant()
+    newItem = [itemName, itemQuantity, itemPrice]
+    shoppingList.add(newItem)
+    totalPrice()
+
+def totalPrice():
+    nTotal = 0
+    for item in ShoppingList:
+        nTotal += item[1] * item[2]
+    return nTotal
+
+def totalItems():
+    nTotal = 0
+    for item in shoppingList:
+        nTotal += item[1]
+    return nTotal
+        
 #test with carrots
 
-print("Carrots cost: " + getPrice("にんじん") + "円")
-
-
-
-    
+print("Carrots cost: " + getPrice("にんじん"))
+print("Onions cost: " + getPrice("玉ねぎ"))
+print("Cucumbers cost: " + getPrice("きゅうり"))
+print("Potatoes cost: " + getPrice("じゃがいも"))
