@@ -49,6 +49,7 @@ dictTranslate = {"white eggs L" : "白たまご L",
             "japanese mustard spinach": "小松菜",
             "half white radish": "大根(1/2カット)",
             "chinese cabbage": "白菜(はくさい)"}
+
     dictURL = {"白たまご L" : "https://netsuper.rakuten.co.jp/seiyu/item/4901995100309/",
                 "おいしい牛乳" : "https://netsuper.rakuten.co.jp/seiyu/item/4902705126558/",
                 "ナチュレ 恵 megumi" : "https://netsuper.rakuten.co.jp/seiyu/item/49212877/",
@@ -82,7 +83,23 @@ dictTranslate = {"white eggs L" : "白たまご L",
                 "オレンジ": "https://netsuper.rakuten.co.jp/seiyu/item/131106282/",
                "若どりもも肉 2枚": "https://netsuper.rakuten.co.jp/seiyu/item/130251393000003/",
                 "豚肉こまぎれ 大": "https://netsuper.rakuten.co.jp/seiyu/item/130250846000003/",
-                "牛切落し(交雑種)": "https://netsuper.rakuten.co.jp/seiyu/item/130217954000004/"}
+                "牛切落し(交雑種)": "https://netsuper.rakuten.co.jp/seiyu/item/130217954000004/", 
+               "玉ねぎ": "https://netsuper.rakuten.co.jp/seiyu/item/131042108/",
+              "にんじん": "https://netsuper.rakuten.co.jp/seiyu/item/131029406/",
+              "チェリートマト": "https://netsuper.rakuten.co.jp/seiyu/item/131034448/",
+              "長ねぎ": "https://netsuper.rakuten.co.jp/seiyu/item/131052930/",
+              "きゅうり": "https://netsuper.rakuten.co.jp/seiyu/item/131000368/",
+              "じゃがいも": "https://netsuper.rakuten.co.jp/seiyu/item/131038972/",
+              "ブロッコリー(国産)": "https://netsuper.rakuten.co.jp/seiyu/item/131006964/",
+              "なす": "https://netsuper.rakuten.co.jp/seiyu/item/131011456/",
+              "レタス": "https://netsuper.rakuten.co.jp/seiyu/item/131005448/",
+              "キャベツ": "https://netsuper.rakuten.co.jp/seiyu/item/131013658/",
+              "ピーマン": "https://netsuper.rakuten.co.jp/seiyu/item/131014594/",
+              "ぶなしめじ": "https://netsuper.rakuten.co.jp/seiyu/item/131072464/",
+              "えのき茸": "https://netsuper.rakuten.co.jp/seiyu/item/131070842/",
+              "小松菜": "https://netsuper.rakuten.co.jp/seiyu/item/131046052/",
+              "大根(1/2カット)": "https://netsuper.rakuten.co.jp/seiyu/item/131040326/",
+              "白菜(はくさい)": "https://netsuper.rakuten.co.jp/seiyu/item/131052640/"}
 
 
 
