@@ -2,9 +2,14 @@ from appJar import gui
 
 app = gui()
 
-
+iie = {"3" : 255, "4" : 88}
 hai = {"1": 199, "2": 100}
-English = {"yes": hai, "no": "iie"}
+English = {"yes": hai, "no": iie}
+
+
+def reset(reset):
+    for word in English[app.getOptionBox("type")]:
+        app.changeOptionBox("food", English[app.getOptionBox("type")], word)
 
 app.setSticky("nesw")
 app.addLabel("title", "English", 0, 0)
@@ -14,11 +19,11 @@ app.setLabelBg("title", "red")
 app.setLabelBg("title2", "blue")
 app.addOptionBox("type", English, 1, 0)
 app.addOptionBox("food", English[app.getOptionBox("type")], 1, 1)
-app.setOptionBox("food", English[app.getOptionsBox("type")])
+app.setOptionBoxChangeFunction("type", reset)
 app.addTextArea("price", 1, 2)
-#app.addTextArea("japanese", , 2)
+app.addLabel("japanese")
 
-2,0
+
 
 def cartBtn(btn):
     app.clearTextArea("food")
